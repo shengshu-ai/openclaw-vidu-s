@@ -43,4 +43,4 @@ openclaw plugins install clawhub:openclaw-vidu-s
 
 ## API 集成
 
-[Vidu S API](https://github.com/shengshu-ai/vidu-s-api)
+[Vidu-S API](https://github.com/shengshu-ai/vidu-s-api)

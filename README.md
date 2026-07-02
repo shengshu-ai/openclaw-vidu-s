@@ -2,7 +2,7 @@
 
 > Summon a **Vidu-S** realtime, interactive digital human — right from your claw, in one sentence.
 
-**English** | [中文](README.zh-CN.md)
+**English** | [中文](https://github.com/shengshu-ai/openclaw-vidu-s/blob/main/README.zh-CN.md)
 
 ---
 
@@ -16,7 +16,7 @@ you can *talk to, watch perform, and build a lasting relationship with*.
 Real humans, anime characters, or cute mascots — Vidu-S brings them to life on screen
 and lets them respond to your voice in real time.
 
-🔗 Product homepage: **[Vidu S1 API Platform](https://platform.vidu.cn/live/landing)**
+🔗 Product homepage: **[Vidu S1 API Platform](https://platform.vidu.com/live/landing)**
 
 ## Why it stands out
 
@@ -45,4 +45,4 @@ openclaw plugins install clawhub:openclaw-vidu-s
 
 ## API integration
 
-[Vidu S API](https://github.com/shengshu-ai/vidu-s-api)
+[Vidu-S API](https://github.com/shengshu-ai/vidu-s-api)
