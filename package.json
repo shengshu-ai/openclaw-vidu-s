@@ -1,0 +1,42 @@
+{
+  "name": "openclaw-vidu-s",
+  "version": "0.1.0",
+  "description": "Summon a Vidu-S realtime digital human in one sentence (China / global); returns a SaaS experience link.",
+  "type": "module",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "openclaw.plugin.json",
+    "README.md",
+    "README.zh-CN.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "check": "tsc -p tsconfig.json --noEmit"
+  },
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ],
+    "compat": {
+      "pluginApi": ">=2026.3.24-beta.2",
+      "minGatewayVersion": "2026.3.24-beta.2"
+    },
+    "build": {
+      "openclawVersion": "2026.6.11",
+      "pluginSdkVersion": "2026.6.11"
+    }
+  },
+  "dependencies": {
+    "typebox": "^1.3.3"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.6.11"
+  },
+  "devDependencies": {
+    "openclaw": "^2026.6.11",
+    "typescript": "^5.9.0",
+    "vitest": "^3.0.0"
+  }
+}

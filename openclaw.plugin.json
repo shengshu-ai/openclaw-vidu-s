@@ -1,0 +1,44 @@
+{
+  "id": "vidu-s",
+  "name": "Vidu-S Digital Human",
+  "description": "Summon a Vidu-S realtime digital human in one sentence (China / global).",
+  "activation": {
+    "onStartup": true
+  },
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "region": {
+        "anyOf": [
+          {
+            "type": "string",
+            "const": "cn"
+          },
+          {
+            "type": "string",
+            "const": "global"
+          }
+        ],
+        "default": "global",
+        "description": "Region: cn = China, global = overseas. Defaults to global."
+      },
+      "saasBaseUrlCn": {
+        "type": "string",
+        "default": "https://www.vidu.cn/vidu-stream",
+        "description": "China experience page URL (usually no need to change)."
+      },
+      "saasBaseUrlGlobal": {
+        "type": "string",
+        "default": "https://www.vidu.com/vidu-stream",
+        "description": "Overseas experience page URL (usually no need to change)."
+      }
+    },
+    "additionalProperties": false
+  },
+  "version": "0.1.0",
+  "contracts": {
+    "tools": [
+      "create_digital_human"
+    ]
+  }
+}
