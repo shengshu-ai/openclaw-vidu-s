@@ -35,7 +35,7 @@
     },
     "additionalProperties": false
   },
-  "version": "0.1.2",
+  "version": "0.1.3",
   "contracts": {
     "tools": [
       "create_digital_human"

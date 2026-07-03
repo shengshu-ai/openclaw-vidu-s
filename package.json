@@ -1,7 +1,7 @@
 {
   "name": "openclaw-vidu-s1",
-  "version": "0.1.2",
-  "description": "Summon a Vidu S1 realtime digital human in one sentence (China / global); returns a SaaS experience link.",
+  "version": "0.1.3",
+  "description": "Summon a Vidu S1 realtime digital human in one sentence (China / global).",
   "type": "module",
   "license": "MIT",
   "files": [
