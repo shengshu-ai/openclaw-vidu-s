@@ -36,10 +36,10 @@ AI 陪伴 · 虚拟偶像 · 培训讲解 · AI 客服 · 电商直播 · 影游
 ## 安装
 
 ```bash
-openclaw plugins install clawhub:openclaw-vidu-s
+openclaw plugins install clawhub:openclaw-vidu-s1
 ```
 
-默认使用 global 区域。国内用户可通过 `{ "vidu-s": { "region": "cn" } }` 切换。
+默认使用 global 区域。国内用户可通过 `{ "openclaw-vidu-s1": { "region": "cn" } }` 切换。
 
 ## API 集成
 

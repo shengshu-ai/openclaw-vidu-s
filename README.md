@@ -41,7 +41,7 @@ delivers a digital-human conversation experience as requested.
 ## Install
 
 ```bash
-openclaw plugins install clawhub:openclaw-vidu-s
+openclaw plugins install clawhub:openclaw-vidu-s1
 ```
 
 
