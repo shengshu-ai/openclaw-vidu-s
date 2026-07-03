@@ -9,7 +9,7 @@ import {
 
 export default defineToolPlugin({
   id: "openclaw-vidu-s1",
-  name: "Vidu S1 Digital Human",
+  name: "Vidu S1",
   description: "Summon a Vidu S1 realtime digital human in one sentence (China / global).",
   configSchema: Type.Object(
     {
