@@ -1,7 +1,7 @@
 {
   "id": "vidu-s",
-  "name": "Vidu-S Digital Human",
-  "description": "Summon a Vidu-S realtime digital human in one sentence (China / global).",
+  "name": "Vidu S1 Digital Human",
+  "description": "Summon a Vidu S1 realtime digital human in one sentence (China / global).",
   "activation": {
     "onStartup": true
   },

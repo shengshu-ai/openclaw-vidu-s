@@ -1,19 +1,18 @@
-# openclaw-vidu-s
+# openclaw-vidu-s1
 
-> Summon a **Vidu-S** realtime, interactive digital human — right from your claw, in one sentence.
+> Summon a **Vidu S1** realtime, interactive digital human — right from your claw, in one sentence.
 
-**English** | [中文](https://github.com/shengshu-ai/openclaw-vidu-s/blob/main/README.zh-CN.md)
+**English** | [中文](https://github.com/shengshu-ai/openclaw-vidu-s1/blob/main/README.zh-CN.md)
 
 ---
 
-## Meet Vidu-S
+## Meet Vidu S1
 
-**Vidu-S** (Vidu S1 streaming video model) is a next-generation, enterprise-grade
-digital-human service built on Vidu S1 — a world-leading streaming video inference
-model. It delivers **near-real-time, interactive, two-way-aware** virtual characters
+**Vidu S1** is a next-generation, enterprise-grade streaming video model for
+digital-human experiences. It delivers **near-real-time, interactive, two-way-aware** virtual characters
 you can *talk to, watch perform, and build a lasting relationship with*.
 
-Real humans, anime characters, or cute mascots — Vidu-S brings them to life on screen
+Real humans, anime characters, or cute mascots — Vidu S1 brings them to life on screen
 and lets them respond to your voice in real time.
 
 🔗 Product homepage: **[Vidu S1 API Platform](https://platform.vidu.com/live/landing)**
@@ -26,6 +25,8 @@ and lets them respond to your voice in real time.
 - **Interaction with warmth** — customizable personas and looks (real people, 2D characters, pets) plus short-term memory for a personal, human touch.
 - **Multimodal** — voice, text, and video interaction; perceives the user's appearance and emotion.
 - **Stunning quality** — high-resolution, real-time generative video.
+
+
 
 ## Where it shines
 
@@ -43,6 +44,8 @@ delivers a digital-human conversation experience as requested.
 openclaw plugins install clawhub:openclaw-vidu-s
 ```
 
+
+
 ## API integration
 
-[Vidu-S API](https://github.com/shengshu-ai/vidu-s-api)
+[Vidu S1 API](https://github.com/shengshu-ai/vidu-s1-api)

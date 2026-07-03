@@ -1,18 +1,18 @@
-# openclaw-vidu-s
+# openclaw-vidu-s1
 
-> 一句话，在你的 claw 里召唤一个 **Vidu-S** 实时互动数字人。
+> 一句话，在你的 claw 里召唤一个 **Vidu S1** 实时互动数字人。
 
 [English](README.md) | **中文**
 
 ---
 
-## 认识 Vidu-S
+## 认识 Vidu S1
 
-**Vidu-S**（Vidu S1 流式视频生成模型）以全球领先的 Vidu S1 流式推理视频模型为基础，面向企业提供
+**Vidu S1** 是全球领先的流式推理视频模型，面向企业提供
 **准实时、可交互、具备双向感知能力**的新一代数字人服务。它带来的，是*能对话、会表演、可长期陪伴*的
 视频 AI 角色。
 
-真人、二次元、萌宠，Vidu-S 让它们在屏幕上「活」起来，并实时回应你的声音。
+真人、二次元、萌宠，Vidu S1 让它们在屏幕上「活」起来，并实时回应你的声音。
 
 产品首页：**[Vidu S1 API 开放平台](https://platform.vidu.cn/live/landing)**
 
@@ -43,4 +43,4 @@ openclaw plugins install clawhub:openclaw-vidu-s
 
 ## API 集成
 
-[Vidu-S API](https://github.com/shengshu-ai/vidu-s-api)
+[Vidu S1 API](https://github.com/shengshu-ai/vidu-s1-api)

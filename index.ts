@@ -9,8 +9,8 @@ import {
 
 export default defineToolPlugin({
   id: "vidu-s",
-  name: "Vidu-S Digital Human",
-  description: "Summon a Vidu-S realtime digital human in one sentence (China / global).",
+  name: "Vidu S1 Digital Human",
+  description: "Summon a Vidu S1 realtime digital human in one sentence (China / global).",
   configSchema: Type.Object(
     {
       region: Type.Optional(
@@ -39,7 +39,7 @@ export default defineToolPlugin({
       name: "create_digital_human",
       label: "Summon Digital Human",
       description:
-        "Start a Vidu-S realtime digital human and return an experience link. After opening the link, the user selects their preferred persona and voice on the page. This tool takes no parameters. When relaying the result, present the link to the user in the user's own language.",
+        "Start a Vidu S1 realtime digital human and return an experience link. After opening the link, the user selects their preferred persona and voice on the page. This tool takes no parameters. When relaying the result, present the link to the user in the user's own language.",
       parameters: Type.Object({}),
       execute: (_params, config) => {
         const link = resolveBaseUrl(config);

@@ -16,7 +16,7 @@ export function resolveBaseUrl(config: ViduSConfig): string {
       ? config.saasBaseUrlCn ?? DEFAULT_SAAS_BASE_URL_CN
       : config.saasBaseUrlGlobal ?? DEFAULT_SAAS_BASE_URL_GLOBAL;
   if (!url) {
-    throw new Error(`Vidu-S: region "${region}" 对应的 baseUrl 为空，请检查配置`);
+    throw new Error(`Vidu S1: region "${region}" 对应的 baseUrl 为空，请检查配置`);
   }
   return url;
 }
