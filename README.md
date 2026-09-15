@@ -1,51 +1,46 @@
-# openclaw-vidu-s1
+# openclaw-vidu-s
 
-> Summon a **Vidu S1** realtime, interactive digital human — right from your claw, in one sentence.
+Summon a **Vidu S** real-time interactive digital human from your claw in one sentence.
 
-**English** | [中文](https://github.com/shengshu-ai/openclaw-vidu-s1/blob/main/README.zh-CN.md)
+English | [Chinese](README.zh-CN.md)
 
----
+## Meet Vidu S
 
-## Meet Vidu S1
+**Vidu S** is a leading video avatar product that provides enterprises with a new generation of **near-real-time, interactive, and two-way perceptive** digital human services. It brings video AI characters to life with the ability to **interact, perform, perceive, and build lasting connections**.
 
-**Vidu S1** is a next-generation, enterprise-grade streaming video model for
-digital-human experiences. It delivers **near-real-time, interactive, two-way-aware** virtual characters
-you can *talk to, watch perform, and build a lasting relationship with*.
+From real people and anime characters to adorable mascots, Vidu S can bring a character to life on screen from a single image and let it interact with users through voice, text, and video in real time.
 
-Real humans, anime characters, or cute mascots — Vidu S1 brings them to life on screen
-and lets them respond to your voice in real time.
+Product documentation: [Vidu S Platform](https://platform.vidu.cn/vidu-stream/doc/s2-avatar/realtime/introduction)
 
-🔗 Product homepage: **[Vidu S1 API Platform](https://platform.vidu.com/live/landing)**
+## Why It Stands Out
 
-## Why it stands out
+- **Commercial-grade real-time interaction**: Supports natural conversation, expressive performance, and two-way perception for enterprise digital human applications.
+- **Stable long-form interaction**: Supports sessions of up to two hours, making it suitable for companionship, presentations, customer service, and livestreaming.
+- **Fast, natural responses**: Offers strong instruction following and semantic understanding, with support for real-time interruption during conversations.
+- **Flexible characters and voices**: Supports real people, anime characters, mascots, and other visual styles, with customizable personas, appearances, voices, and voice cloning.
+- **Multimodal interaction**: Supports video, voice, and text interaction, with both audio-video and audio-only modes.
+- **Expressive motion**: Supports idle motions, runtime action matching, and custom action libraries for more natural character behavior.
+- **Long-term memory and knowledge**: Connects to built-in or external memory and knowledge services so characters can remember user preferences and answer with domain-specific information.
+- **Real-time visual changes**: Supports switching reference images during a live session to introduce props, outfits, or backgrounds without interrupting the conversation.
+- **Session recording**: Supports optional recording and provides a downloadable recording after the session ends.
 
-- **Commercial-grade interaction** — the first commercial interactive digital human that can *converse, perform, and perceive both ways*.
-- **Unlimited session length** — the first generative video model to sustain interaction from 1 minute up to 2 hours with no quality loss.
-- **Blazing responsiveness** — strong instruction-following and semantic understanding with industry-leading inference speed, enabling near-real-time cross-screen interaction.
-- **Interaction with warmth** — customizable personas and looks (real people, 2D characters, pets) plus short-term memory for a personal, human touch.
-- **Multimodal** — voice, text, and video interaction; perceives the user's appearance and emotion.
-- **Stunning quality** — high-resolution, real-time generative video.
+## Use Cases
 
+AI companionship · Virtual idols · Training and explainers · AI customer service · E-commerce livestreaming · Social interaction · Game characters · Interactive entertainment
 
+## What This Plugin Does
 
-## Where it shines
+This is an OpenClaw **tool plugin**. Tell your claw, "I want a digital human," and it will create a Vidu S character based on your requirements and provide a real-time conversation experience.
 
-AI companionship · Virtual idols · Training & explainers · AI customer service ·
-E-commerce livestreaming · Film & game interaction
-
-## What this plugin does
-
-This is an OpenClaw **tool plugin**. Just say *"I want a digital human"* to your claw, and it
-delivers a digital-human conversation experience as requested.
+You can describe the character's appearance, persona, voice, and interaction style, and enable memory, knowledge, actions, or recording when needed.
 
 ## Install
 
 ```bash
-openclaw plugins install clawhub:openclaw-vidu-s1
+openclaw plugins install clawhub:openclaw-vidu-s
 ```
 
+## API Integration
 
-
-## API integration
-
-[Vidu S1 API](https://github.com/shengshu-ai/vidu-s1-api)
+- [Vidu S Real-Time Overview](https://platform.vidu.cn/vidu-stream/doc/s2-avatar/realtime/introduction)
+- [Vidu S Real-Time API Reference](https://platform.vidu.cn/vidu-stream/doc/s2-avatar/realtime/parameters)
