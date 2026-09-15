@@ -1,51 +1,59 @@
-# openclaw-vidu-s1
+# openclaw-vidu-s
 
-> Summon a **Vidu S1** realtime, interactive digital human — right from your claw, in one sentence.
+Create real-time digital humans and transform live video with **Vidu S**.
 
-**English** | [中文](https://github.com/shengshu-ai/openclaw-vidu-s1/blob/main/README.zh-CN.md)
+English | [Chinese](README.zh-CN.md)
 
----
+## Meet Vidu S
 
-## Meet Vidu S1
+**Vidu S** provides two core real-time video capabilities for enterprise applications: **Avatar** and **Editing**.
 
-**Vidu S1** is a next-generation, enterprise-grade streaming video model for
-digital-human experiences. It delivers **near-real-time, interactive, two-way-aware** virtual characters
-you can *talk to, watch perform, and build a lasting relationship with*.
+### Vidu S Avatar
 
-Real humans, anime characters, or cute mascots — Vidu S1 brings them to life on screen
-and lets them respond to your voice in real time.
+Create a real-time interactive digital human from a single image. Vidu S Avatar supports voice, text, and video interaction, along with customizable personas, voices, motions, memory, knowledge, and session recording.
 
-🔗 Product homepage: **[Vidu S1 API Platform](https://platform.vidu.com/live/landing)**
+### Vidu S Editing
 
-## Why it stands out
+Transform a live video stream as it is being published. Vidu S Editing supports style rendering, character replacement, background replacement, and virtual try-on, and can switch reference images or editing modes without interrupting the stream.
 
-- **Commercial-grade interaction** — the first commercial interactive digital human that can *converse, perform, and perceive both ways*.
-- **Unlimited session length** — the first generative video model to sustain interaction from 1 minute up to 2 hours with no quality loss.
-- **Blazing responsiveness** — strong instruction-following and semantic understanding with industry-leading inference speed, enabling near-real-time cross-screen interaction.
-- **Interaction with warmth** — customizable personas and looks (real people, 2D characters, pets) plus short-term memory for a personal, human touch.
-- **Multimodal** — voice, text, and video interaction; perceives the user's appearance and emotion.
-- **Stunning quality** — high-resolution, real-time generative video.
+## Core Capabilities
 
+### Avatar
 
+- **Natural interaction**: Supports real-time conversation, user interruption, and audio-video or audio-only interaction.
+- **Custom characters**: Supports real people, anime characters, mascots, custom personas, voice cloning, and expressive motions.
+- **Context-aware responses**: Connects to built-in or external memory and knowledge services for personalized, domain-specific conversations.
 
-## Where it shines
+### Editing
 
-AI companionship · Virtual idols · Training & explainers · AI customer service ·
-E-commerce livestreaming · Film & game interaction
+- **Four editing modes**: Style rendering, character replacement, background replacement, and virtual try-on.
+- **Continuous streaming**: Receives a source video stream and outputs the edited result in real time.
+- **Live switching**: Changes the reference image or editing mode during a session without stopping the stream.
 
-## What this plugin does
+## Use Cases
 
-This is an OpenClaw **tool plugin**. Just say *"I want a digital human"* to your claw, and it
-delivers a digital-human conversation experience as requested.
+**Avatar:** AI companionship · Virtual idols · Training and explainers · AI customer service · E-commerce livestreaming · Game characters
+
+**Editing:** Stylized livestreams · Virtual production · Character transformation · Virtual try-on · Background replacement
+
+## What This Plugin Does
+
+This OpenClaw **tool plugin** gives your claw access to Vidu S Avatar and Editing. Describe the digital human or live-video transformation you want, and the plugin creates the requested experience with the appropriate Vidu S capability.
 
 ## Install
 
 ```bash
-openclaw plugins install clawhub:openclaw-vidu-s1
+openclaw plugins install clawhub:openclaw-vidu-s
 ```
 
+## API Integration
 
+### Avatar
 
-## API integration
+- [Vidu S Avatar Overview](https://platform.vidu.cn/vidu-stream/doc/s2-avatar/realtime/introduction)
+- [Vidu S Avatar API Reference](https://platform.vidu.cn/vidu-stream/doc/s2-avatar/realtime/parameters)
 
-[Vidu S1 API](https://github.com/shengshu-ai/vidu-s1-api)
+### Editing
+
+- [Vidu S Editing Overview](https://platform.vidu.cn/vidu-stream/doc/s2-editing/introduction)
+- [Vidu S Editing API Reference](https://platform.vidu.cn/vidu-stream/doc/s2-editing/parameters)

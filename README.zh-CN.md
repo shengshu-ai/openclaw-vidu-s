@@ -1,46 +1,59 @@
-# openclaw-vidu-s1
+# openclaw-vidu-s
 
-> 一句话，在你的 claw 里召唤一个 **Vidu S1** 实时互动数字人。
+使用 **Vidu S** 创建实时互动数字人，或实时编辑视频流。
 
-[English](README.md) | **中文**
+[English](README.md) | 中文
 
----
+## 认识 Vidu S
 
-## 认识 Vidu S1
+**Vidu S** 面向企业应用提供两项核心实时视频能力：**Avatar** 与 **Editing**。
 
-**Vidu S1** 是全球领先的流式推理视频模型，面向企业提供
-**准实时、可交互、具备双向感知能力**的新一代数字人服务。它带来的，是*能对话、会表演、可长期陪伴*的
-视频 AI 角色。
+### Vidu S Avatar
 
-真人、二次元、萌宠，Vidu S1 让它们在屏幕上「活」起来，并实时回应你的声音。
+只需一张图片，即可创建实时互动数字人。Vidu S Avatar 支持语音、文字和视频交互，并可自定义人设、音色与动作，接入记忆、知识库和会话录制等能力。
 
-产品首页：**[Vidu S1 API 开放平台](https://platform.vidu.cn/live/landing)**
+### Vidu S Editing
 
-## 核心亮点
+在视频流推送过程中实时完成画面编辑。Vidu S Editing 支持风格渲染、角色替换、背景替换和虚拟换衣，并可在不中断视频流的情况下切换参考图或编辑模式。
 
-- **商业级互动**：首个能互动、会表演、可双向感知的商业级交互式数字人。
-- **无限时长互动**：全球首个支持无限互动时长的生成式视频大模型，1 分钟到 2 小时无质量损失。
-- **极快的响应**：指令遵循与语义理解能力强，推理速度业内最快，实现准实时跨屏互动。
-- **有温度的体验**：支持真人 / 二次元 / 萌宠等多种自定义人格与形象，具备短期记忆，交互更个性、更有温度。
-- **多模态互动**：支持语音、文字、视频交互，可捕捉用户外貌与情绪。
-- **极佳画质**：高分辨率实时交互生成。
+## 核心能力
+
+### Avatar
+
+- **自然互动**：支持实时对话、用户打断，以及音视频或纯语音交互。
+- **个性化角色**：支持真人、二次元、萌宠等形象，可配置人设、克隆音色和表现动作。
+- **上下文理解**：可接入平台内置或外部记忆与知识服务，实现个性化、专业化回答。
+
+### Editing
+
+- **四种编辑模式**：支持风格渲染、角色替换、背景替换和虚拟换衣。
+- **实时流式处理**：持续接收原始视频流，并实时输出编辑后的视频流。
+- **直播中切换**：可在会话过程中更换参考图或编辑模式，无需停止视频流。
 
 ## 落地场景
 
-AI 陪伴 · 虚拟偶像 · 培训讲解 · AI 客服 · 电商直播 · 影游互动
+**Avatar：** AI 陪伴 · 虚拟偶像 · 培训讲解 · AI 客服 · 电商直播 · 游戏角色
+
+**Editing：** 风格化直播 · 虚拟制作 · 角色变换 · 虚拟换衣 · 背景替换
 
 ## 这个插件做什么
 
-这是一个 OpenClaw **工具插件**。对你的 claw 说一句「我要一个数字人」，它会按照要求给你数字人的对话体验。
+这是一个 OpenClaw **工具插件**，让你的 claw 可以使用 Vidu S Avatar 与 Editing。描述你想要的数字人或实时视频编辑效果，插件会调用对应的 Vidu S 能力生成所需体验。
 
 ## 安装
 
 ```bash
-openclaw plugins install clawhub:openclaw-vidu-s1
+openclaw plugins install clawhub:openclaw-vidu-s
 ```
-
-默认使用 global 区域。国内用户可通过 `{ "openclaw-vidu-s1": { "region": "cn" } }` 切换。
 
 ## API 集成
 
-[Vidu S1 API](https://github.com/shengshu-ai/vidu-s1-api)
+### Avatar
+
+- [Vidu S Avatar 整体介绍](https://platform.vidu.cn/vidu-stream/doc/s2-avatar/realtime/introduction)
+- [Vidu S Avatar 详细参数](https://platform.vidu.cn/vidu-stream/doc/s2-avatar/realtime/parameters)
+
+### Editing
+
+- [Vidu S Editing 整体介绍](https://platform.vidu.cn/vidu-stream/doc/s2-editing/introduction)
+- [Vidu S Editing 详细参数](https://platform.vidu.cn/vidu-stream/doc/s2-editing/parameters)
