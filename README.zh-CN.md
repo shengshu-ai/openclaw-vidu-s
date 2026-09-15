@@ -1,61 +1,59 @@
 # openclaw-vidu-s
 
-一句话，在你的 claw 里召唤一个 **Vidu S** 实时互动数字人。
+使用 **Vidu S** 创建实时互动数字人，或实时编辑视频流。
 
 [English](README.md) | 中文
 
 ## 认识 Vidu S
 
-**Vidu S** 是全球领先的视频数字人产品，面向企业提供**准实时、可交互、具备双向感知能力**的新一代数字人服务。它带来的，是**能互动、会表演、可感知、可长期陪伴**的视频 AI 角色。
+**Vidu S** 面向企业应用提供两项核心实时视频能力：**Avatar** 与 **Editing**。
 
-真人、二次元、萌宠等多种形象，只需提供一张单人图片，即可让角色在屏幕上「活」起来，通过语音、文字和视频与用户实时互动。
+### Vidu S Avatar
 
-产品文档：[Vidu S 开放平台](https://platform.vidu.cn/vidu-stream/doc/s2-avatar/realtime/quick-start)
+只需一张图片，即可创建实时互动数字人。Vidu S Avatar 支持语音、文字和视频交互，并可自定义人设、音色与动作，接入记忆、知识库和会话录制等能力。
 
-## 核心亮点
+### Vidu S Editing
 
-- **商业级实时互动**：支持实时对话、表演和双向感知，可用于企业级数字人应用。
-- **长时间稳定互动**：单次会话最长支持 2 小时，适合陪伴、讲解、客服与直播等持续交互场景。
-- **快速自然响应**：具备优秀的指令遵循和语义理解能力，支持用户实时打断，让跨屏互动更加自然。
-- **丰富的形象与声音**：支持真人、二次元、萌宠等多种风格，可配置人设、形象和音色，并支持自定义音色克隆。
-- **多模态交互**：支持音视频与文字互动，可选择音视频模式或纯语音模式。
-- **更有表现力的动作**：支持静默小动作、运行时动作匹配和自定义动作库，让数字人的表现更自然。
-- **长期记忆与知识库**：支持平台内置或外部记忆、知识检索，让数字人记住用户偏好，并结合业务知识回答问题。
-- **实时画面变化**：Vidu S2 模型支持在互动过程中切换参考图，实现手持物、换装、换背景等画面变化，无需中断对话。
-- **会话录制**：可按需开启录制，并在会话结束后获取录播文件。
+在视频流推送过程中实时完成画面编辑。Vidu S Editing 支持风格渲染、角色替换、背景替换和虚拟换衣，并可在不中断视频流的情况下切换参考图或编辑模式。
+
+## 核心能力
+
+### Avatar
+
+- **自然互动**：支持实时对话、用户打断，以及音视频或纯语音交互。
+- **个性化角色**：支持真人、二次元、萌宠等形象，可配置人设、克隆音色和表现动作。
+- **上下文理解**：可接入平台内置或外部记忆与知识服务，实现个性化、专业化回答。
+
+### Editing
+
+- **四种编辑模式**：支持风格渲染、角色替换、背景替换和虚拟换衣。
+- **实时流式处理**：持续接收原始视频流，并实时输出编辑后的视频流。
+- **直播中切换**：可在会话过程中更换参考图或编辑模式，无需停止视频流。
 
 ## 落地场景
 
-AI 陪伴 · 虚拟偶像 · 培训讲解 · AI 客服 · 电商直播 · 社交互动 · 游戏角色 · 影视互动
+**Avatar：** AI 陪伴 · 虚拟偶像 · 培训讲解 · AI 客服 · 电商直播 · 游戏角色
+
+**Editing：** 风格化直播 · 虚拟制作 · 角色变换 · 虚拟换衣 · 背景替换
 
 ## 这个插件做什么
 
-这是一个 OpenClaw **工具插件**。对你的 claw 说一句「我要一个数字人」，它会根据你的要求创建 Vidu S 数字人，并提供实时对话体验。
-
-你可以描述数字人的形象、人设、声音和互动方式，也可以根据场景启用长期记忆、知识库、动作或录制能力。
+这是一个 OpenClaw **工具插件**，让你的 claw 可以使用 Vidu S Avatar 与 Editing。描述你想要的数字人或实时视频编辑效果，插件会调用对应的 Vidu S 能力生成所需体验。
 
 ## 安装
 
 ```bash
 openclaw plugins install clawhub:openclaw-vidu-s
 ```
-## 快速开始
-
-使用前需要准备一个可用的 Vidu MaaS API Key，格式通常为 `vda_...`。实时音视频交互需要使用支持 WebRTC 的浏览器，并允许浏览器访问麦克风；使用视频模式时还需要摄像头权限。
-
-Vidu S 实时数字人的基础接入流程为：
-
-1. 通过 HTTP 创建 Live 会话，获得 `live_id` 和 RTC 入会信息。
-2. 建立 WebSocket 控制链路，发送会话初始化信号。
-3. 通过 AliRTC 加入频道，收发实时音视频。
-4. 控制链路和媒体链路就绪后，即可开始互动。
-5. 互动结束后发送挂断信号并退出 RTC 频道。
-
-国内环境使用 `api.vidu.cn`，海外环境使用 `api.vidu.com`。API Key 必须与所选环境对应。
 
 ## API 集成
 
-- [Vidu S 快速开始](https://platform.vidu.cn/vidu-stream/doc/s2-avatar/realtime/quick-start)
-- [Vidu S 实时版整体介绍](https://platform.vidu.cn/vidu-stream/doc/s2-avatar/realtime/introduction)
-- [Vidu S 实时版详细参数](https://platform.vidu.cn/vidu-stream/doc/s2-avatar/realtime/parameters)
+### Avatar
 
+- [Vidu S Avatar 整体介绍](https://platform.vidu.cn/vidu-stream/doc/s2-avatar/realtime/introduction)
+- [Vidu S Avatar 详细参数](https://platform.vidu.cn/vidu-stream/doc/s2-avatar/realtime/parameters)
+
+### Editing
+
+- [Vidu S Editing 整体介绍](https://platform.vidu.cn/vidu-stream/doc/s2-editing/introduction)
+- [Vidu S Editing 详细参数](https://platform.vidu.cn/vidu-stream/doc/s2-editing/parameters)
